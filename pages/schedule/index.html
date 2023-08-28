@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to Pengudang Village: Explore the Beauty of Nature and Culture. Experience the breathtaking natural charm and captivating cultural heritage of our destination. Discover unforgettable adventures in Pengudang Village!" />
+    <meta
+      name="keywords"
+      content="Pengudang, Tourism, Explore, Adventure, Travel destination" />
+    <meta name="author" content="Error Sans" />
+
+    <meta property="og:title" content="Pengudang" />
+    <meta
+      property="og:description"
+      content="Tourist attractions in Pengudang" />
+    <meta property="og:image" content="/images/mangrove-adventure.webp" />
+
+    <base href="localhost/" />
+
+    <title>Guidelines</title>
+
+    <link rel="icon" href="/pengudang.discover.co.id/assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/pengudang.discover.co.id/library/flickity/flickity.min.css" />
+    <link rel="stylesheet" href="/pengudang.discover.co.id/library/leaflet/leaflet.css" />
+    <link rel="stylesheet" href="/pengudang.discover.co.id/resource/css/style.css" />
+    <link rel="stylesheet" href="/pengudang.discover.co.id/resource/css/schedule.css" />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <nav>
+        <div class="logo">
+          <a href="/pengudang.discover.co.id"
+            ><div
+              class="logo-title"
+              src="/pengudang.discover.co.id/assets/logo-title.png"
+              alt="Pengudang"></div
+          ></a>
+        </div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="menu">
+          <li>
+            <a class="header-deactive" href="/pengudang.discover.co.id/pages/home/?pages=home">Home</a>
+          </li>
+          <li>
+            <a class="header-deactive" href="/pengudang.discover.co.id/pages/map/?pages=map">Atlas</a>
+          </li>
+          <li>
+            <a class="header-deactive" href="/pengudang.discover.co.id/pages/todo/?pages=todo"
+              >Things To Do</a
+            >
+          </li>
+          <li>
+            <a class="header-deactive" href="/pengudang.discover.co.id/pages/tosee/?pages=tosee"
+              >Things To See</a
+            >
+          </li>
+          <li>
+            <a id="dropdown-hover">Informations</a>
+            <div id="dropdown-header" class="dropdown-header">
+              <ul>
+                <li class="header-deactive">
+                  <a href="/pengudang.discover.co.id/pages/guidelines/?pages=guidelines">Guidelines</a>
+                </li>
+                <li class="header-active">
+                  <a href="/pengudang.discover.co.id/pages/schedule/?pages=schedule"
+                    >Book your Accomodation</a
+                  >
+                </li>
+                <li class="header-deactive">
+                  <a href="/pengudang.discover.co.id/pages/about/?pages=about">About Us</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <div class="search">
+            <div id="search" class="search-input">
+              <input id="input-search" type="text" placeholder="search.." />
+            </div>
+            <div id="search-click" alt=""></div>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="cookies-hedaer" class="cookies">
+        <div class="kepala">
+          <img src="/pengudang.discover.co.id/assets/cookie.png" alt="" />
+          <h1>Cookies Consent</h1>
+        </div>
+        <p>
+          This website use cookies to help you have a superior and more relevant
+          browsing experience on the website.
+        </p>
+        <div class="tombol">
+          <div class="acce" id="acce">Accept</div>
+          <a href="/pengudang.discover.co.id/pages/cookie/">More Information -></a>
+        </div>
+      </div>
+
+      <div class="title">
+        <div class="img"></div>
+        <h1><span class="warna-1">Book your Accomodation</span> Your Visit</h1>
+        <p>You can schedule your visit now by making an appointment</p>
+      </div>
+
+      <div class="schedule">
+        <ul class="header-discover">
+          <li id="accomodation-header" class="discover-active">Accomodation</li>
+          <li id="transportation-header">Transportation</li>
+          <li id="person-header">Contact Person</li>
+        </ul>
+
+        <div id="accomodation" class="content-content accomodation">
+          <h1>Accommodation</h1>
+          <br />
+          <span>
+            Crafting Moments, Building Connections: Engaging Customers in
+            Unforgettable Accommodation Experiences
+          </span>
+          <br /><br />
+          <p>
+            Our accommodation boasts comfortable and well-appointed rooms,
+            designed to provide a peaceful sanctuary after a day of exploration.
+            From cozy retreats for solo travelers to spacious accommodations for
+            families and groups, we cater to diverse needs and ensure a
+            comfortable stay for all. Select your ideal accommodation and embark
+            on a journey of relaxation and discovery. Experience the utmost
+            comfort and tranquility at our well-appointed rooms, thoughtfully
+            designed to cater to the diverse needs of our valued guests.
+          </p>
+          <br />
+
+          <div class="home-siti">
+            <div class="siti-grid">
+              <img
+                src="/pengudang.discover.co.id/images/tosee/homestay-siti-rapeah.webp"
+                alt="home stay siti" />
+              <div class="child-siti-grid">
+                <img src="" alt="" />
+                <img src="" alt="" />
+                <img src="" alt="" />
+                <img src="" alt="" />
+              </div>
+            </div>
+            <div class="siti-grid-2">
+              <h2>Homestay Siti Rapeah</h2>
+              <h6>“Alamat”</h6>
+              <br />
+              <p>
+                <b>Homestay Siti Rapeah</b> offers a unique opportunity for
+                visitors to Pengudang to immerse themselves in the local culture
+                by living together with the villagers. With three well-equipped
+                rooms, each with its own toilet, air conditioning, and other
+                necessary amenities, guests can enjoy a comfortable stay while
+                still being able to experience the local way of life. For an
+                unforgettable and authentic experience in Pengudang, Homestay
+                Siti Rapeah offers a chance to live side by side with the locals
+                while enjoying the comforts of a well-equipped accommodation.
+                Immerse yourself in the vibrant village life, create meaningful
+                connections, and make lasting memories during your stay.
+              </p>
+            </div>
+            <div class="siti-grid-3">
+              <h3>Highlights</h3>
+              <div class="siti-flex">
+                <div class="">
+                  <img src="/pengudang.discover.co.id/assets/air.png" alt="" />
+                  <p>AC</p>
+                </div>
+                <div class="">
+                  <img src="/pengudang.discover.co.id/assets/mosque.png" alt="" />
+                  <p>Musallah</p>
+                </div>
+                <div class="">
+                  <img src="/pengudang.discover.co.id/assets/bathtub.png" alt="" />
+                  <p>Bathroom</p>
+                </div>
+                <div class="">
+                  <img src="/pengudang.discover.co.id/assets/tv.png" alt="" />
+                  <p>TV</p>
+                </div>
+                <div class="">
+                  <img src="/pengudang.discover.co.id/assets/room_service.png" alt="" />
+                  <p>Room Service</p>
+                </div>
+                <div class="">
+                  <img src="/pengudang.discover.co.id/assets/free_breakfast.png" alt="" />
+                  <p>Breakfast</p>
+                </div>
+              </div>
+            </div>
+            <div class="siti-grid-4">
+              <div class="number-room">
+                <img src="/pengudang.discover.co.id/assets/bedroom_parent-2.png" alt="" />
+                <div class="">
+                  <h5>Number Rooms</h5>
+                  <p>2-3 Rooms</p>
+                </div>
+              </div>
+              <div class="price">
+                <img src="/pengudang.discover.co.id/assets/monetization_on.png" alt="" />
+                <div class="">
+                  <h5>Price</h5>
+                  <p>“Harga”</p>
+                </div>
+              </div>
+              <div class="contact-iwan">
+                <img src="/pengudang.discover.co.id/assets/phone.png" alt="" />
+                <div class="">
+                  <h5>Contact (Iwan)</h5>
+                  <p>+62 812-7581-5795</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br /><br />
+
+          <div class="home-siti">
+            <div class="siti-grid">
+              <img
+                src="/pengudang.discover.co.id/images/tosee/warung-dan-homestay-bunda-1.webp"
+                alt="home stay siti" />
+              <div class="child-siti-grid">
+                <img src="" alt="" />
+                <img src="" alt="" />
+                <img src="" alt="" />
+                <img src="" alt="" />
+              </div>
+            </div>
+            <div class="siti-grid-2">
+              <h2>Warung dan Homestay "Bunda"</h2>
+              <h6>“Alamat”</h6>
+              <br />
+              <p>
+                <b>Warung and Homestay "Bunda"</b> offer a cozy and authentic
+                accommodation experience in Pengudang. Located adjacent to the
+                owner's home, these homestays provide a warm and welcoming
+                atmosphere for visitors. The homestay consist of a two-floor
+                small building, allowing guests to have their own private space
+                while being in close proximity to the friendly hosts. The rooms
+                are well-maintained and comfortable, providing a peaceful
+                retreat for guests to relax and unwind. One of the highlights of
+                staying at Warung and Homestay "Bunda" is the opportunity to
+                savor delicious homemade food on demand. The hosts are known for
+                their culinary skills and are happy to prepare meals for guests
+                upon request. Indulge in traditional flavors and local dishes,
+                offering a taste of authentic Indonesian cuisine. Experience the
+                comfort of a home away from home, enjoy homemade meals, and
+                create lasting memories in this charming village.
+              </p>
+            </div>
+            <div class="siti-grid-3">
+              <h3>Highlights</h3>
+              <div class="siti-flex">
+                <div class="">
+                  <img src="/pengudang.discover.co.id/assets/air.png" alt="" />
+                  <p>AC</p>
+                </div>
+                <div class="">
+                  <img src="/pengudang.discover.co.id/assets/mosque.png" alt="" />
+                  <p>Musallah</p>
+                </div>
+                <div class="">
+                  <img src="/pengudang.discover.co.id/assets/bathtub.png" alt="" />
+                  <p>Bathroom</p>
+                </div>
+                <div class="">
+                  <img src="/pengudang.discover.co.id/assets/tv.png" alt="" />
+                  <p>TV</p>
+                </div>
+                <div class="">
+                  <img src="/pengudang.discover.co.id/assets/room_service.png" alt="" />
+                  <p>Room Service</p>
+                </div>
+                <div class="">
+                  <img src="/pengudang.discover.co.id/assets/free_breakfast.png" alt="" />
+                  <p>Breakfast</p>
+                </div>
+              </div>
+            </div>
+            <div class="siti-grid-4">
+              <div class="number-room">
+                <img src="/pengudang.discover.co.id/assets/bedroom_parent-2.png" alt="" />
+                <div class="">
+                  <h5>Number Rooms</h5>
+                  <p>2-3 Rooms</p>
+                </div>
+              </div>
+              <div class="price">
+                <img src="/pengudang.discover.co.id/assets/monetization_on.png" alt="" />
+                <div class="">
+                  <h5>Price</h5>
+                  <p>“Harga”</p>
+                </div>
+              </div>
+              <div class="contact-iwan">
+                <img src="/pengudang.discover.co.id/assets/phone.png" alt="" />
+                <div class="">
+                  <h5>Contact</h5>
+                  <h5>Awaludin</h5>
+                  <p>+62 813-7273-4910</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="transportation" class="content-content transportation">
+          <h1>Transporation</h1>
+          <br />
+          <span>How to Reach The Village</span><br />
+          <br />
+          <p>
+            To reach Pengudang Village from Raja Haji Fisabilillah International
+            Airport in Tanjung Pinang City, visitors have the option of renting
+            a personal vehicle in advance. Renting a vehicle provides the
+            convenience and flexibility to explore the beautiful scenery along
+            the way.
+          </p>
+          <br />
+          <p>
+            As you embark on your journey, you will have the opportunity to
+            enjoy the scenic seaside road that stretches along the coastline.
+            The breathtaking views of the sparkling sea and the gentle breeze
+            create a serene atmosphere, making the drive an enjoyable
+            experience. The well-maintained road winds its way through
+            picturesque landscapes, offering glimpses of lush greenery and
+            traditional villages along the route.
+          </p>
+        </div>
+
+        <div id="person" class="content-content person">
+          <div class="peson-1">
+            <div class="person-1-1">
+              <h4>Contact Us</h4>
+              <div class="person-1-1-1">
+                <img src="/pengudang.discover.co.id/assets/phone.png" alt="" />
+                <div class="">
+                  <h6>Iwan</h6>
+                  <p>+62 812-7581-5795</p>
+                </div>
+              </div>
+            </div>
+            <div class="person-1-1 tambah">
+              <h4>Address</h4>
+              <p class="tambah-1">
+                Jl. Hamidi Gg. Anggrek merah No.209, RT.7/RW.3, Pengudang, Kec.
+                Tlk. Sebong, Kabupaten Bintan, Kepulauan Riau Indonesia, Post
+                ID: 29152
+              </p>
+            </div>
+          </div>
+
+          <div class="peson-1">
+            <div class="person-1-1">
+              <h4>Contact Us</h4>
+              <div class="person-1-1-1">
+                <img src="/pengudang.discover.co.id/assets/phone.png" alt="" />
+                <div class="">
+                  <h6>Awaludin</h6>
+                  <p>+62 813-7273-4910</p>
+                </div>
+              </div>
+            </div>
+            <div class="person-1-1 tambah">
+              <h4>Address</h4>
+              <p class="tambah-1">
+                Jl. Hamidi Gg. Anggrek merah No.209, RT.7/RW.3, Pengudang, Kec.
+                Tlk. Sebong, Kabupaten Bintan, Kepulauan Riau Indonesia, Post
+                ID: 29152
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="most-popular">
+        <h1>You Might Also Like...</h1>
+        <p class="p">
+          Experience even more of Pengudang with these popular things to do
+        </p>
+        <div class="list-item-most">
+          <a href="/pengudang.discover.co.id/pages/content/?get=tosee&id=1" class="item-most">
+            <img src="/pengudang.discover.co.id/images/content/kedai-kopi-batu-10-2.webp" alt="" />
+            <div class="info-most">
+              <h3>Kedai Kopi Batu 10</h3>
+              <p>caption</p>
+            </div>
+          </a>
+          <a href="/pengudang.discover.co.id/pages/content/?get=tosee&id=4" class="item-most">
+            <img src="/pengudang.discover.co.id/images/content/mangrove-adventure-1.webp" alt="" />
+            <div class="info-most">
+              <h3>Pengudang Mangrove Tours</h3>
+              <p>caption</p>
+            </div>
+          </a>
+          <a href="/pengudang.discover.co.id/pages/content/?get=tosee&id=47" class="item-most">
+            <img src="/pengudang.discover.co.id/images/content/desa-pengudang-1.webp" alt="" />
+            <div class="info-most">
+              <h3>Desa Pengudang</h3>
+              <p>caption</p>
+            </div>
+          </a>
+          <a href="/pengudang.discover.co.id/pages/content/?get=tosee&id=22" class="item-most">
+            <img src="/pengudang.discover.co.id/images/content/pantai-batu-empang-1.webp" alt="" />
+            <div class="info-most">
+              <h3>Pantai Batu Empang</h3>
+              <p>caption</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-content">
+          <div class="footer-link">
+            <ul>
+              <h3>Things To Do</h3>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/todo/?pages=todo&category=2">Beach Visit</a>
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/todo/?pages=todo&category=5">Culinary</a>
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/todo/?pages=todo&category=7">Kelong</a>
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/todo/?pages=todo&category=1"
+                  >Mangrove Adventure</a
+                >
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/todo/?pages=todo&category=3"
+                  >City Exploration</a
+                >
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/todo/?pages=todo&category=6">Historical</a>
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/todo/?pages=todo&category=4">Leisure Drive</a>
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/todo/?pages=todo&category=9">Seaside Golf</a>
+              </li>
+              <a href="/pengudang.discover.co.id/pages/cookie/">Privacy Notice</a>
+            </ul>
+            <ul>
+              <h3>Things To See</h3>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/tosee/?pages=tosee">Destination</a>
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/tosee/?pages=tosee&search=Culinary"
+                  >Tradition & Culinary</a
+                >
+              </li>
+            </ul>
+            <ul>
+              <h3>Schedule Visit</h3>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/schedule/?pages=schedule&type=accomodation"
+                  >Accomodation</a
+                >
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/schedule/?pages=schedule&type=transportation"
+                  >Transportation</a
+                >
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/schedule/?pages=schedule&type=person"
+                  >Contact Person</a
+                >
+              </li>
+            </ul>
+            <ul>
+              <h3>About Us</h3>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/about/?pages=about">The Team</a>
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/schedule/?pages=schedule&type=person"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <ul>
+              <h3>Guidelines</h3>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/guidelines/?pages=tosee&type=visa"
+                  >Type of Visa</a
+                >
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/guidelines/?pages=tosee&type=difference"
+                  >Time Difference</a
+                >
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/guidelines/?pages=tosee&type=currency"
+                  >Currency</a
+                >
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/guidelines/?pages=tosee&type=electricity"
+                  >Plug & Electricity</a
+                >
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/guidelines/?pages=tosee&type=culture"
+                  >People & Culture</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-sposnor">
+            <h3>Get in Touch</h3>
+            <input type="text" placeholder="Type your email" />
+            <div class="foto-sponsor">
+              <img src="/pengudang.discover.co.id/assets/logo-lppm-itb.png" alt="logo lppm itb" />
+              <img src="/pengudang.discover.co.id/assets/logo-sbm-itb.png" alt="logo sbm itb" />
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          &copy; 2023 Tim Pengabdian Masyarakat ITB. All rights reserved.
+        </div>
+      </footer>
+    </main>
+
+    <script src="/pengudang.discover.co.id/library/flickity/flickity.pkgd.min.js"></script>
+    <script src="/pengudang.discover.co.id/library/leaflet/leaflet.js"></script>
+    <script src="/pengudang.discover.co.id/library/axios/axios.min.js"></script>
+    <script src="/pengudang.discover.co.id/resource/javascript/script.js"></script>
+    <script src="/pengudang.discover.co.id/resource/javascript/schedule.js"></script>
+  </body>
+</html>

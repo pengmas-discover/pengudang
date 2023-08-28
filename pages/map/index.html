@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to Pengudang Village: Explore the Beauty of Nature and Culture. Experience the breathtaking natural charm and captivating cultural heritage of our destination. Discover unforgettable adventures in Pengudang Village!" />
+    <meta
+      name="keywords"
+      content="Pengudang, Tourism, Explore, Adventure, Travel destination" />
+    <meta name="author" content="Error Sans" />
+
+    <meta property="og:title" content="Pengudang" />
+    <meta
+      property="og:description"
+      content="Tourist attractions in Pengudang" />
+    <meta property="og:image" content="/images/mangrove-adventure.webp" />
+
+    <base href="localhost/" />
+
+    <title>Map</title>
+
+    <link rel="icon" href="/pengudang.discover.co.id/assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/pengudang.discover.co.id/library/flickity/flickity.min.css" />
+    <link rel="stylesheet" href="/pengudang.discover.co.id/library/leaflet/leaflet.css" />
+    <link rel="stylesheet" href="/pengudang.discover.co.id/resource/css/style.css" />
+    <link rel="stylesheet" href="/pengudang.discover.co.id/resource/css/map.css" />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <nav>
+        <div class="logo">
+          <a href="/pengudang.discover.co.id"
+            ><div
+              class="logo-title"
+              src="/pengudang.discover.co.id/assets/logo-title.png"
+              alt="Pengudang"></div
+          ></a>
+        </div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="menu">
+          <li>
+            <a class="header-deactive" href="/pengudang.discover.co.id/pages/home/?pages=home">Home</a>
+          </li>
+          <li>
+            <a class="header-deactive" href="/pengudang.discover.co.id/pages/map/?pages=map">Atlas</a>
+          </li>
+          <li>
+            <a class="header-deactive" href="/pengudang.discover.co.id/pages/todo/?pages=todo"
+              >Things To Do</a
+            >
+          </li>
+          <li>
+            <a class="header-deactive" href="/pengudang.discover.co.id/pages/tosee/?pages=tosee"
+              >Things To See</a
+            >
+          </li>
+          <li>
+            <a id="dropdown-hover">Informations</a>
+            <div id="dropdown-header" class="dropdown-header">
+              <ul>
+                <li class="header-deactive">
+                  <a href="/pengudang.discover.co.id/pages/guidelines/?pages=guidelines">Guidelines</a>
+                </li>
+                <li class="header-deactive">
+                  <a href="/pengudang.discover.co.id/pages/schedule/?pages=schedule"
+                    >Book your Accomodation</a
+                  >
+                </li>
+                <li class="header-deactive">
+                  <a href="/pengudang.discover.co.id/pages/about/?pages=about">About Us</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <div class="search">
+            <div id="search" class="search-input">
+              <input id="input-search" type="text" placeholder="search.." />
+            </div>
+            <div id="search-click" alt=""></div>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="cookies-hedaer" class="cookies">
+        <div class="kepala">
+          <img src="/pengudang.discover.co.id/assets/cookie.png" alt="" />
+          <h1>Cookies Consent</h1>
+        </div>
+        <p>
+          This website use cookies to help you have a superior and more relevant
+          browsing experience on the website.
+        </p>
+        <div class="tombol">
+          <div class="acce" id="acce">Accept</div>
+          <a href="/pengudang.discover.co.id/pages/cookie/">More Information -></a>
+        </div>
+      </div>
+
+      <div id="map"></div>
+
+      <div class="layes">
+        <img id="osm" src="/pengudang.discover.co.id/assets/osm.png" alt="" />
+        <img id="street" src="/pengudang.discover.co.id/assets/street.png" alt="" />
+        <img id="satelit" src="/pengudang.discover.co.id/assets/satelit.png" alt="" />
+      </div>
+
+      <div class="hover-layer">
+        <h3 id="h3-osm">Open Street Maps</h3>
+        <h3 id="h3-street">Google Street</h3>
+        <h3 id="h3-satelit">Google Satelite</h3>
+      </div>
+
+      <div id="map-info" class="information">
+        <div class="carousel">
+          <div class="carousel-cell">
+            <img id="img-1" src="" alt="orange tree" />
+          </div>
+          <div class="carousel-cell">
+            <img id="img-2" src="" alt="One World Trade" />
+          </div>
+          <div class="carousel-cell">
+            <img id="img-3" src="" alt="drizzle" />
+          </div>
+        </div>
+        <div class="content-map">
+          <h1 id="h1-map">Cassia Bintan</h1>
+          <table>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>Days</td>
+              <td>:</td>
+              <td id="days-map">Everyday</td>
+            </tr>
+            <tr>
+              <td>Hour</td>
+              <td>:</td>
+              <td id="hours-map">24 Hours</td>
+            </tr>
+          </table>
+          <div id="isi-map">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            fuga velit, dolore inventore eveniet accusamus sunt quia, dolorem
+            iusto eius quasi vitae soluta quo reiciendis eligendi nemo molestiae
+            dignissimos ab?
+          </div>
+          <a id="view-map" href="/pengudang.discover.co.id/pages/content/">View more</a>
+          <div class="close-map" id="close-map">X</div>
+        </div>
+      </div>
+    </main>
+
+    <script src="/pengudang.discover.co.id/library/flickity/flickity.pkgd.min.js"></script>
+    <script src="/pengudang.discover.co.id/library/leaflet/leaflet.js"></script>
+    <script src="/pengudang.discover.co.id/library/axios/axios.min.js"></script>
+    <script src="/pengudang.discover.co.id/resource/javascript/script.js"></script>
+    <script src="/pengudang.discover.co.id/resource/javascript/map.js"></script>
+  </body>
+</html>

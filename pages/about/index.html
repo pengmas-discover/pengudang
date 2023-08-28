@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to Pengudang Village: Explore the Beauty of Nature and Culture. Experience the breathtaking natural charm and captivating cultural heritage of our destination. Discover unforgettable adventures in Pengudang Village!" />
+    <meta
+      name="keywords"
+      content="Pengudang, Tourism, Explore, Adventure, Travel destination" />
+    <meta name="author" content="Error Sans" />
+
+    <meta property="og:title" content="Pengudang" />
+    <meta
+      property="og:description"
+      content="Tourist attractions in Pengudang" />
+    <meta property="og:image" content="/images/mangrove-adventure.webp" />
+
+    <base href="localhost/" />
+
+    <title>About Us</title>
+
+    <link rel="icon" href="/pengudang.discover.co.id/assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/pengudang.discover.co.id/library/flickity/flickity.min.css" />
+    <link rel="stylesheet" href="/pengudang.discover.co.id/library/leaflet/leaflet.css" />
+    <link rel="stylesheet" href="/pengudang.discover.co.id/resource/css/style.css" />
+    <link rel="stylesheet" href="/pengudang.discover.co.id/resource/css/about.css" />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <nav>
+        <div class="logo">
+          <a href="/pengudang.discover.co.id"
+            ><div
+              class="logo-title"
+              src="/pengudang.discover.co.id/assets/logo-title.png"
+              alt="Pengudang"></div
+          ></a>
+        </div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="menu">
+          <li>
+            <a class="header-deactive" href="/pengudang.discover.co.id/pages/home/?pages=home">Home</a>
+          </li>
+          <li>
+            <a class="header-deactive" href="/pengudang.discover.co.id/pages/map/?pages=map">Atlas</a>
+          </li>
+          <li>
+            <a class="header-deactive" href="/pengudang.discover.co.id/pages/todo/?pages=todo"
+              >Things To Do</a
+            >
+          </li>
+          <li>
+            <a class="header-deactive" href="/pengudang.discover.co.id/pages/tosee/?pages=tosee"
+              >Things To See</a
+            >
+          </li>
+          <li>
+            <a id="dropdown-hover">Informations</a>
+            <div id="dropdown-header" class="dropdown-header">
+              <ul>
+                <li class="header-deactive">
+                  <a href="/pengudang.discover.co.id/pages/guidelines/?pages=guidelines">Guidelines</a>
+                </li>
+                <li class="header-deactive">
+                  <a href="/pengudang.discover.co.id/pages/schedule/?pages=schedule"
+                    >Book your Accomodation</a
+                  >
+                </li>
+                <li class="header-deactive">
+                  <a href="/pengudang.discover.co.id/pages/about/?pages=about">About Us</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <div class="search">
+            <div id="search" class="search-input">
+              <input id="input-search" type="text" placeholder="search.." />
+            </div>
+            <div id="search-click" alt=""></div>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="cookies-hedaer" class="cookies">
+        <div class="kepala">
+          <img src="/pengudang.discover.co.id/assets/cookie.png" alt="" />
+          <h1>Cookies Consent</h1>
+        </div>
+        <p>
+          This website use cookies to help you have a superior and more relevant
+          browsing experience on the website.
+        </p>
+        <div class="tombol">
+          <div class="acce" id="acce">Accept</div>
+          <a href="/pengudang.discover.co.id/pages/cookie/">More Information -></a>
+        </div>
+      </div>
+
+      <div class="title">
+        <div class="img"></div>
+        <h1>
+          <span class="warna-1">About</span>
+          Us <br /><br />
+          <p>Discover who we are</p>
+        </h1>
+      </div>
+
+      <div class="desa">
+        <div class="logo-desa">
+          <img src="/pengudang.discover.co.id/assets/about-desa.png" alt="" />
+          <h1><span class="warna">About</span> Pengudang Village</h1>
+          <p>A community based Oasis on Bintan Island</p>
+        </div>
+        <div class="text-1">
+          <img src="/pengudang.discover.co.id/images/peta.webp" alt="" />
+          <div class="">
+            <p>
+              Welcome to Pengudang, a hidden gem nestled on the captivating
+              Bintan Island. This enchanting village is a true haven for
+              travelers seeking an authentic and immersive experience. Located
+              near the lush mangrove forest and embraced by a pristine beach,
+              Pengudang boasts breathtaking natural beauty that captivates the
+              senses. As you set foot in this serene paradise, you'll be
+              welcomed by the friendly smiles of the locals, who take great
+              pride in their community-based tourism initiatives.
+            </p>
+            <br />
+            <p>
+              Prepare to embark on a journey of discovery, where every step
+              unveils a unique blend of culture and nature. The warm hospitality
+              of the villagers will make you feel at home while showcasing their
+              rich heritage and traditions. Immerse yourself in the tranquil
+              surroundings, indulge in the delicious local cuisine, and
+              participate in sustainable practices that preserve the pristine
+              environment. Whether you're a nature lover, an adventure seeker,
+              or simply looking for a peaceful retreat, Pengudang promises an
+              unforgettable adventure that will leave you with cherished
+              memories for a lifetime.
+            </p>
+          </div>
+        </div>
+
+        <div class="text-2">
+          <div class="gambar-1">
+            <img
+              class="gambar-1-1"
+              src="/pengudang.discover.co.id/images/thumbnail/desa-pengudang-1.webp"
+              alt="" />
+            <img
+              class="gambar-1-2"
+              src="/pengudang.discover.co.id/images/thumbnail/pengudang-mangrove-tours-1.webp"
+              alt="" />
+            <img
+              class="gambar-1-3"
+              src="/pengudang.discover.co.id/images/thumbnail/bintan-green-mangrove-tour-1.webp"
+              alt="" />
+          </div>
+
+          <p>
+            Pengudang's rich cultural heritage is another compelling reason to
+            visit this idyllic village. With a history steeped in traditions,
+            rituals, and folklore, the locals eagerly share their stories with
+            curious visitors. Engage in traditional activities like
+            batik-making, weaving, and cooking authentic dishes using age-old
+            recipes handed down through generations. The warm hospitality of the
+            villagers welcomes you into their homes, where you can witness
+            firsthand the customs and rituals that have endured over centuries.
+            Through these interactions, you gain a deeper appreciation for the
+            importance of preserving cultural identity in the face of
+            modernization.
+          </p>
+          <br />
+          <p>
+            Beyond its natural beauty and cultural treasures, Pengudang also
+            champions sustainable practices that benefit both the environment
+            and the community. The villagers have initiated eco-friendly
+            initiatives, such as waste management programs and renewable energy
+            projects, to minimize their ecological footprint. By supporting
+            these initiatives, visitors contribute to the village's efforts in
+            preserving its pristine surroundings for future generations to
+            enjoy. Moreover, the tourism revenue generated directly supports the
+            local economy, empowering the community to maintain control over
+            their sustainable development and improve their quality of life.
+          </p>
+          <br />
+          <p>
+            A journey to Pengudang is not merely a vacation but an immersion
+            into a world where nature and culture thrive harmoniously. As you
+            depart this enchanted village, you carry with you memories of
+            untouched landscapes, authentic encounters, and the knowledge that
+            responsible tourism can be a powerful force for positive change.
+            Pengudang stands as a beacon of hope, showing that through
+            community-driven efforts, tourism can be a force for conservation
+            and empowerment, demonstrating the boundless potential of
+            sustainable travel for the betterment of our planet.
+          </p>
+        </div>
+
+        <div class="logo-desa" style="display: none">
+          <img src="/pengudang.discover.co.id/assets/about-meet.png" alt="" />
+          <h1><span class="warna">Meet</span> Our Mascot</h1>
+          <p>&lt;tag name of our Mascot&gt;</p>
+        </div>
+
+        <div class="maskot" style="display: none">
+          <img src="/pengudang.discover.co.id/assets/about-see.png" alt="" />
+          <img src="/pengudang.discover.co.id/assets/about-do.png" alt="" />
+        </div>
+
+        <div class="text-3" style="display: none">
+          <p>
+            Within this community-based tourism framework, Pengudang proudly
+            upholds the conservation of the magnificent dugong, an iconic marine
+            creature also known as the "sea cow."
+          </p>
+          <br />
+          <p>
+            Introducing &lt;name mascot&gt; the adorable and eco-conscious
+            mascot that brings smiles, happiness, and promotes a sustainable
+            ecosystem! &lt;name mascot&gt; captures the playful and endearing
+            nature of the dugong in a charming and delightful design. With a
+            focus on sustainability, &lt;name mascot&gt; spreads joy while
+            advocating for the preservation and well-being of our environment.
+          </p>
+          <br />
+          <p>
+            With its cute and cuddly appearance, &lt;name mascot&gt; melts
+            hearts and invites warm connections. Its design features soft
+            contours and a lovable expression, evoking a sense of compassion and
+            care. &lt;name mascot&gt; expressive eyes twinkle with delight,
+            reflecting its deep love for nature and promoting eco-conscious
+            living. With an infectious laughter and a gentle demeanor, &lt;name
+            mascot&gt; radiates happiness and inspires others to embrace
+            sustainable practices.
+          </p>
+        </div>
+
+        <div class="logo-desa">
+          <img src="/pengudang.discover.co.id/assets/about-team.png" alt="" />
+          <h1><span class="warna">Meet</span> Our Teams</h1>
+          <p>Get acquainted with our talented teams</p>
+        </div>
+
+        <div class="teams">
+          <div class="item-team">
+            <img src="/pengudang.discover.co.id/images/teams/meditya.png" alt="" />
+            <h2>Meditya Wasesa</h2>
+            <p>Project Leader</p>
+            <span>ITB Lecturer</span>
+          </div>
+          <div class="item-team">
+            <img src="/pengudang.discover.co.id/images/teams/utomo.png" alt="" />
+            <h2>Utomo Sarjono Putro</h2>
+            <span>ITB Lecturer</span>
+          </div>
+          <div class="item-team">
+            <img src="/pengudang.discover.co.id/images/teams/harimukti.png" alt="" />
+            <h2>Harimukti Wandebori</h2>
+            <span>ITB Lecturer</span>
+          </div>
+          <div class="item-team">
+            <img src="/pengudang.discover.co.id/images/teams/haidar.png" alt="" />
+            <h2>Haidar Aji Wasesa</h2>
+            <span>Project Manager</span><br />
+            <a href="https://www.instagram.com/haidar_wasesa/"
+              >@haidar_wasesa</a
+            >
+          </div>
+          <div class="item-team">
+            <img src="/pengudang.discover.co.id/images/teams/ali.png" alt="" />
+            <h2>Ahmad Ali Satia</h2>
+            <span>Lead Programmer</span><br />
+            <a href="https://www.instagram.com/ali.satia/">@ali.satia</a>
+          </div>
+          <div class="item-team">
+            <img
+              style="object-position: center"
+              src="/pengudang.discover.co.id/images/teams/reza.png"
+              alt="" />
+            <h2>Reza Setiadi Shihran</h2>
+            <span>Assistan Manager/Data Scientist</span>
+          </div>
+          <div class="item-team">
+            <img src="/pengudang.discover.co.id/images/teams/puteri.png" alt="" />
+            <h2>Puteri Annisa</h2>
+            <span>Graphic Designer</span><br />
+            <a href="https://www.instagram.com/puteriatf/">@puteriatf</a>
+          </div>
+          <div class="item-team">
+            <img src="/pengudang.discover.co.id/images/teams/salma.png" alt="" />
+            <h2>Salma A. Salsabilla</h2>
+            <span>Graphic Designer, Photo & Video Editor</span><br />
+            <a href="https://www.instagram.com/salmasalsabilla6/"
+              >@salmasalsabilla6</a
+            >
+          </div>
+          <div class="item-team">
+            <img src="/pengudang.discover.co.id/images/teams/hendro.png" alt="" />
+            <h2>Hendra Kusumah</h2>
+            <span>Liaison Officer</span>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-content">
+          <div class="footer-link">
+            <ul>
+              <h3>Things To Do</h3>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/todo/?pages=todo&category=2">Beach Visit</a>
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/todo/?pages=todo&category=5">Culinary</a>
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/todo/?pages=todo&category=7">Kelong</a>
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/todo/?pages=todo&category=1"
+                  >Mangrove Adventure</a
+                >
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/todo/?pages=todo&category=3"
+                  >City Exploration</a
+                >
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/todo/?pages=todo&category=6">Historical</a>
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/todo/?pages=todo&category=4">Leisure Drive</a>
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/todo/?pages=todo&category=9">Seaside Golf</a>
+              </li>
+              <a href="/pengudang.discover.co.id/pages/cookie/">Privacy Notice</a>
+            </ul>
+            <ul>
+              <h3>Things To See</h3>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/tosee/?pages=tosee">Destination</a>
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/tosee/?pages=tosee&search=Culinary"
+                  >Tradition & Culinary</a
+                >
+              </li>
+            </ul>
+            <ul>
+              <h3>Schedule Visit</h3>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/schedule/?pages=schedule&type=accomodation"
+                  >Accomodation</a
+                >
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/schedule/?pages=schedule&type=transportation"
+                  >Transportation</a
+                >
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/schedule/?pages=schedule&type=person"
+                  >Contact Person</a
+                >
+              </li>
+            </ul>
+            <ul>
+              <h3>About Us</h3>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/about/?pages=about">The Team</a>
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/schedule/?pages=schedule&type=person"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <ul>
+              <h3>Guidelines</h3>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/guidelines/?pages=tosee&type=visa"
+                  >Type of Visa</a
+                >
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/guidelines/?pages=tosee&type=difference"
+                  >Time Difference</a
+                >
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/guidelines/?pages=tosee&type=currency"
+                  >Currency</a
+                >
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/guidelines/?pages=tosee&type=electricity"
+                  >Plug & Electricity</a
+                >
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/guidelines/?pages=tosee&type=culture"
+                  >People & Culture</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-sposnor">
+            <h3>Get in Touch</h3>
+            <input type="text" placeholder="Type your email" />
+            <div class="foto-sponsor">
+              <img src="/pengudang.discover.co.id/assets/logo-lppm-itb.png" alt="logo lppm itb" />
+              <img src="/pengudang.discover.co.id/assets/logo-sbm-itb.png" alt="logo sbm itb" />
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          &copy; 2023 Tim Pengabdian Masyarakat ITB. All rights reserved.
+        </div>
+      </footer>
+    </main>
+
+    <script src="/pengudang.discover.co.id/library/flickity/flickity.pkgd.min.js"></script>
+    <script src="/pengudang.discover.co.id/library/leaflet/leaflet.js"></script>
+    <script src="/pengudang.discover.co.id/library/axios/axios.min.js"></script>
+    <script src="/pengudang.discover.co.id/resource/javascript/script.js"></script>
+    <script src="/pengudang.discover.co.id/resource/javascript/about.js"></script>
+  </body>
+</html>

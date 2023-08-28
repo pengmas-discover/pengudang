@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to Pengudang Village: Explore the Beauty of Nature and Culture. Experience the breathtaking natural charm and captivating cultural heritage of our destination. Discover unforgettable adventures in Pengudang Village!" />
+    <meta
+      name="keywords"
+      content="Pengudang, Tourism, Explore, Adventure, Travel destination" />
+    <meta name="author" content="Error Sans" />
+
+    <meta property="og:title" content="Pengudang" />
+    <meta
+      property="og:description"
+      content="Tourist attractions in Pengudang" />
+    <meta property="og:image" content="/images/mangrove-adventure.webp" />
+
+    <base href="localhost/" />
+
+    <title>Things to see</title>
+
+    <link rel="icon" href="/pengudang.discover.co.id/assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/pengudang.discover.co.id/library/flickity/flickity.min.css" />
+    <link rel="stylesheet" href="/pengudang.discover.co.id/library/leaflet/leaflet.css" />
+    <link rel="stylesheet" href="/pengudang.discover.co.id/resource/css/style.css" />
+    <link rel="stylesheet" href="/pengudang.discover.co.id/resource/css/tosee.css" />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <nav>
+        <div class="logo">
+          <a href="/pengudang.discover.co.id"
+            ><div
+              class="logo-title"
+              src="/pengudang.discover.co.id/assets/logo-title.png"
+              alt="Pengudang"></div
+          ></a>
+        </div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="menu">
+          <li>
+            <a class="menu-ul header-deactive" href="/pengudang.discover.co.id/pages/home/?pages=home"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="menu-ul header-deactive" href="/pengudang.discover.co.id/pages/map/?pages=map"
+              >Atlas</a
+            >
+          </li>
+          <li>
+            <a class="menu-ul header-deactive" href="/pengudang.discover.co.id/pages/todo/?pages=todo"
+              >Things To Do</a
+            >
+          </li>
+          <li>
+            <a class="menu-ul header-active" href="/pengudang.discover.co.id/pages/tosee/?pages=tosee"
+              >Things To See</a
+            >
+          </li>
+          <li>
+            <a id="dropdown-hover">Informations</a>
+            <div id="dropdown-header" class="dropdown-header">
+              <ul>
+                <li class="header-deactive">
+                  <a class="menu-ul" href="/pengudang.discover.co.id/pages/guidelines/?pages=guidelines"
+                    >Guidelines</a
+                  >
+                </li>
+                <li class="header-deactive">
+                  <a class="menu-ul" href="/pengudang.discover.co.id/pages/schedule/?pages=schedule"
+                    >Book your Accomodation</a
+                  >
+                </li>
+                <li class="header-deactive">
+                  <a class="menu-ul" href="/pengudang.discover.co.id/pages/about/?pages=about"
+                    >About Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <div class="search">
+            <div id="search" class="search-input">
+              <input id="input-search" type="text" placeholder="search.." />
+            </div>
+            <div id="search-click" alt=""></div>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="cookies-hedaer" class="cookies">
+        <div class="kepala">
+          <img src="/pengudang.discover.co.id/assets/cookie.png" alt="" />
+          <h1>Cookies Consent</h1>
+        </div>
+        <p>
+          This website use cookies to help you have a superior and more relevant
+          browsing experience on the website.
+        </p>
+        <div class="tombol">
+          <div class="acce" id="acce">Accept</div>
+          <a href="/pengudang.discover.co.id/pages/cookie/">More Information -></a>
+        </div>
+      </div>
+
+      <div class="title">
+        <h1><span class="warna-1">List</span> of Destination</h1>
+        <p>
+          Discover the natural charm and beauty of Pengudang Village in this
+          list of tourist destinations
+        </p>
+        <div class="tosee-search">
+          <img src="/pengudang.discover.co.id/assets/search.png" alt="" />
+          <input id="input-tosee-search" type="text" placeholder="search..." />
+          <button id="tosee-search">Search</button>
+        </div>
+      </div>
+
+      <div class="list-destination">
+        <div class="flex-item"></div>
+
+        <div class="next-item">
+          <div id="next" class="next">View More</div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-content">
+          <div class="footer-link">
+            <ul>
+              <h3>Things To Do</h3>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/todo/?pages=todo&category=2">Beach Visit</a>
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/todo/?pages=todo&category=5">Culinary</a>
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/todo/?pages=todo&category=7">Kelong</a>
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/todo/?pages=todo&category=1"
+                  >Mangrove Adventure</a
+                >
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/todo/?pages=todo&category=3"
+                  >City Exploration</a
+                >
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/todo/?pages=todo&category=6">Historical</a>
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/todo/?pages=todo&category=4">Leisure Drive</a>
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/todo/?pages=todo&category=9">Seaside Golf</a>
+              </li>
+              <a href="/pengudang.discover.co.id/pages/cookie/">Privacy Notice</a>
+            </ul>
+            <ul>
+              <h3>Things To See</h3>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/tosee/?pages=tosee">Destination</a>
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/tosee/?pages=tosee&search=Culinary"
+                  >Tradition & Culinary</a
+                >
+              </li>
+            </ul>
+            <ul>
+              <h3>Schedule Visit</h3>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/schedule/?pages=schedule&type=accomodation"
+                  >Accomodation</a
+                >
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/schedule/?pages=schedule&type=transportation"
+                  >Transportation</a
+                >
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/schedule/?pages=schedule&type=person"
+                  >Contact Person</a
+                >
+              </li>
+            </ul>
+            <ul>
+              <h3>About Us</h3>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/about/?pages=about">The Team</a>
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/schedule/?pages=schedule&type=person"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <ul>
+              <h3>Guidelines</h3>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/guidelines/?pages=tosee&type=visa"
+                  >Type of Visa</a
+                >
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/guidelines/?pages=tosee&type=difference"
+                  >Time Difference</a
+                >
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/guidelines/?pages=tosee&type=currency"
+                  >Currency</a
+                >
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/guidelines/?pages=tosee&type=electricity"
+                  >Plug & Electricity</a
+                >
+              </li>
+              <li>
+                <a href="/pengudang.discover.co.id/pages/guidelines/?pages=tosee&type=culture"
+                  >People & Culture</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-sposnor">
+            <h3>Get in Touch</h3>
+            <input type="text" placeholder="Type your email" />
+            <div class="foto-sponsor">
+              <img src="/pengudang.discover.co.id/assets/logo-lppm-itb.png" alt="logo lppm itb" />
+              <img src="/pengudang.discover.co.id/assets/logo-sbm-itb.png" alt="logo sbm itb" />
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          &copy; 2023 Tim Pengabdian Masyarakat ITB. All rights reserved.
+        </div>
+      </footer>
+    </main>
+
+    <script src="/pengudang.discover.co.id/library/flickity/flickity.pkgd.min.js"></script>
+    <script src="/pengudang.discover.co.id/library/leaflet/leaflet.js"></script>
+    <script src="/pengudang.discover.co.id/library/axios/axios.min.js"></script>
+    <script src="/pengudang.discover.co.id/resource/javascript/script.js"></script>
+    <script src="/pengudang.discover.co.id/resource/javascript/tosee.js"></script>
+  </body>
+</html>
