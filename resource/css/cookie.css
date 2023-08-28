@@ -1,0 +1,109 @@
+.title-cookie {
+  height: 500px;
+  background-image: url("/pengudang.discover.co.id/assets/privacy.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(1px);
+}
+
+.faQuestions {
+  padding: 50px 10vw 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.title {
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.question {
+  margin-top: 25px;
+  background: white;
+  width: 80%;
+  padding: 0 20px 0 0;
+  margin-bottom: 5px;
+}
+
+.title-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  color: white;
+  background-color: #28bfff;
+}
+
+.light-line {
+  display: none;
+}
+
+button {
+  border: 2px solid #0b172a;
+  text-align: center;
+  background: white;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+}
+
+.fa {
+  color: #0b172a;
+}
+
+.q-desc {
+  display: none;
+  padding: 20px 5px;
+  text-align: justify;
+  text-indent: 1em;
+}
+
+/*Show text and divider on click*/
+.show-text button {
+  background: #11a4e4;
+  transform: rotate(45deg);
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.show-text .q-desc {
+  display: block;
+}
+.show-text .light-line {
+  display: block;
+}
+
+.show-text .fa {
+  color: white;
+  align-self: center;
+}
+
+.warna {
+  color: #28bfff;
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .title-cookie {
+    height: 100vw;
+  }
+
+  .faQuestions {
+    padding: 50px 5vw 15px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .question {
+    width: 100%;
+    padding: 0 0 0;
+  }
+
+  .warna {
+    font-size: 18px;
+  }
+}

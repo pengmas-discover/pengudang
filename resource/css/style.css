@@ -1,0 +1,496 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #888;
+}
+
+/* header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px hsla(207, 24%, 35%, 0.1);
+  z-index: 1;
+  background-color: transparent;
+  transition: 0.5s;
+  backdrop-filter: blur(1px);
+  z-index: 9999;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10vw;
+}
+
+.logo-title {
+  background-image: url(/pengudang.discover.co.id/assets/logo-title-white.png);
+  height: 40px;
+  width: 150px;
+  background-position: center;
+  background-size: cover;
+  margin-top: 7px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu a {
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.2s all ease-in-out;
+  color: white;
+}
+
+.menu:hover a {
+  opacity: 0.4;
+}
+
+.menu a:hover {
+  opacity: 1;
+  color: white;
+}
+
+.menu-icon {
+  display: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked ~ .menu {
+  transform: scale(1, 1);
+}
+
+#dropdown-hover {
+  cursor: pointer;
+}
+
+.dropdown-header {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.search {
+  position: relative;
+  margin-left: 25px;
+  width: 30px;
+  display: grid;
+  column-gap: 5px;
+  grid-template-columns: auto 30px;
+}
+
+.search-input {
+  position: absolute;
+  right: 80px;
+  height: 30px;
+  width: auto;
+  transition: 1s;
+}
+
+#search-click {
+  background-image: url(/pengudang.discover.co.id/assets/search-white.png);
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.search-input {
+  position: absolute;
+  right: 100%;
+  top: 150%;
+  background-color: white;
+  display: grid;
+  padding: 5px 15px;
+  border-radius: 5px;
+  display: none;
+}
+
+.search-input input {
+  border: none;
+}
+
+.search-input input:focus {
+  outline: none;
+}
+
+.header-deactive {
+  position: relative;
+  padding-bottom: 3px;
+}
+
+.header-deactive::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: gray;
+  transition: width 0.3s ease;
+}
+
+.header-deactive:hover:after {
+  width: 25%;
+}
+
+.header-active {
+  position: relative;
+  padding-bottom: 3px;
+}
+
+.header-active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25%;
+  height: 2px;
+  background-color: gray;
+  transition: width 0.3s ease;
+}
+
+.menu .header-active {
+  font-weight: bold;
+}
+
+.header:hover {
+  background-color: #fff;
+  box-shadow: 1px 1px 1px gray;
+}
+
+.header:hover .menu a,
+.header:hover .search-desktop input {
+  color: black;
+}
+
+.header:hover #search-click {
+  background-image: url(/pengudang.discover.co.id/assets/search.png);
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+}
+
+.header:hover .logo-title {
+  background-image: url(/pengudang.discover.co.id/assets/logo-title.png);
+}
+
+/* end header */
+
+main {
+  padding: 0;
+}
+
+.cookies {
+  position: fixed;
+  bottom: 2vw;
+  right: 2vw;
+  width: 350px;
+  height: auto;
+  border: 1px solid #28bfff;
+  z-index: 9999;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 1px 1px 3px #1685b4;
+  display: none;
+  grid-template-rows: auto auto 40px;
+  padding: 20px;
+}
+
+.kepala {
+  width: auto;
+  justify-content: center;
+  column-gap: 15px;
+  display: flex;
+}
+
+.kepala img {
+  width: 30px;
+  height: 30px;
+}
+
+.kepala h1 {
+  font-size: 18px;
+  color: #28bfff;
+}
+
+.cookies p {
+  padding: 0 15px;
+  text-align: justify;
+  font-size: 14px;
+  margin: 30px 0;
+}
+
+.tombol {
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+}
+
+.tombol div {
+  padding: 0 15%;
+  border-radius: 5px;
+  cursor: pointer;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.acce {
+  color: white;
+  background-color: #28bfff;
+}
+
+.tombol a {
+  align-self: center;
+  color: blue;
+  text-decoration: underline;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  background-color: #bbbbbb;
+}
+
+.footer-content {
+  padding: 30px 10vw;
+  display: grid;
+  grid-template-columns: auto 25vw;
+}
+
+.footer-link {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "footer-1 footer-2 footer-5 footer-3"
+    "footer-1 footer-4 footer-5 footer-3";
+    row-gap: 2em;
+}
+
+.footer-link ul h3 {
+  font-size: 14px;
+}
+
+.footer-link ul:nth-child(1) {
+  grid-area: footer-1;
+}
+
+.footer-link ul:nth-child(2) {
+  grid-area: footer-2;
+}
+
+.footer-link ul:nth-child(3) {
+  grid-area: footer-4;
+}
+
+.footer-link ul:nth-child(4) {
+  grid-area: footer-3;
+}
+
+.footer-link ul:nth-child(5) {
+  grid-area: footer-5;
+}
+
+.footer-link ul li {
+  margin: 15px 0;
+}
+
+.footer-link ul li a {
+  color: black;
+}
+
+.footer-sposnor {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  align-self: flex-start;
+}
+
+.footer-sposnor h3 {
+  font-size: 14px;
+}
+
+.footer-sposnor input {
+  border-radius: 50px;
+  height: 50px;
+  padding: 0 15px;
+  border: none;
+  width: 100%;
+}
+
+.footer-sposnor input:focus {
+  outline: none;
+}
+
+.foto-sponsor {
+  display: flex;
+  column-gap: 25px;
+  flex-wrap: wrap;
+  row-gap: 25px;
+}
+
+.foto-sponsor img {
+  width: auto;
+  height: 50px;
+}
+
+.copyright {
+  width: 100%;
+  background-color: #8b8b8b;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+/* end footer */
+
+@media only screen and (max-width: 768px) {
+  /* header */
+  .menu {
+    flex-direction: column;
+    background-color: #a9e5ff;
+    backdrop-filter: blur(5px);
+    align-items: start;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .menu a {
+    margin-left: 12px;
+  }
+
+  .menu li {
+    margin-bottom: 10px;
+  }
+
+  .menu-icon {
+    display: block;
+    color: black;
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .search {
+    width: 100vw;
+    display: grid;
+    justify-content: end;
+    padding: 0 30px 15px;
+    column-gap: 15px;
+  }
+
+  .search-desktop {
+    display: none;
+  }
+
+  #search-click {
+    background-image: url(/pengudang.discover.co.id/assets/search.png);
+    align-self: center;
+  }
+
+  .search-input {
+    position: static;
+    height: 50px;
+    width: 80vw;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    display: grid;
+    border-bottom: 1px solid gray;
+    box-shadow: 1px 1px 3px gray;
+    box-shadow: 0 0 0 #fff;
+  }
+
+  .search-input input {
+    background: none;
+  }
+
+  .dropdown-header {
+    display: grid;
+    position: relative;
+    background-color: transparent;
+  }
+
+  /* end header */
+
+  .cookies {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+  }
+
+  /* footer */
+
+  .footer-content {
+    grid-template-columns: auto;
+  }
+
+  .footer-sposnor {
+    padding-top: 50px;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .footer-sposnor input {
+    margin: 0 0 15px;
+  }
+
+  .foto-sponsor img {
+    height: 40px;
+  }
+
+  .footer-link {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "footer-1 footer-2 footer-5"
+      "footer-1 footer-4 footer-3";
+    row-gap: 15px;
+    column-gap: 15px;
+  }
+
+  /* end footer */
+}

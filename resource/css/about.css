@@ -1,0 +1,288 @@
+/* title */
+
+.title {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: blur(2px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/pengudang.discover.co.id/images/content/title-about.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.title h1 {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 50px;
+  text-shadow: 1px 1px 1px black;
+  left: 10vw;
+  color: white;
+}
+
+.title p {
+  font-size: 25px;
+  color: white;
+}
+
+/* end title */
+
+/* desa  */
+
+.desa {
+  width: 100%;
+  height: auto;
+  padding: 50px 10vw 50px;
+}
+
+.desa h1 {
+  font-size: 25px;
+}
+
+.logo-desa {
+  display: grid;
+  grid-template-columns: 30px auto;
+  column-gap: 15px;
+  grid-template-areas:
+    "logo h "
+    "logo p";
+  margin: 25px 0 50px;
+}
+
+.logo-desa img {
+  grid-area: logo;
+  width: 30px;
+  height: 30px;
+}
+
+.logo-desa h1 {
+  grid-area: h;
+}
+
+.logo-desa p {
+  grid-area: p;
+}
+
+.text-1 {
+  display: grid;
+  grid-template-columns: 25vw auto;
+  column-gap: 15px;
+}
+
+.text-1 img {
+  width: 20vw;
+  height: 20vw;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 1px 3px 10px gray;
+}
+
+.text-1 p {
+  text-align: justify;
+  text-indent: 25px;
+}
+
+.gambar-1 {
+  display: grid;
+  grid-template-columns: 50vw auto;
+  grid-template-rows: repeat(2, 15vw);
+  column-gap: 15px;
+  row-gap: 15px;
+  grid-template-areas:
+    "img-1 img-2"
+    "img-1 img-3";
+  margin: 50px 0;
+}
+
+.gambar-1-1 {
+  grid-area: img-1;
+  width: 50vw;
+  height: calc(30vw + 15px);
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.gambar-1-2 {
+  grid-area: img-2;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  height: 15vw;
+}
+
+.gambar-1-3 {
+  grid-area: img-3;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  height: 15vw;
+}
+
+.text-2 p {
+  text-indent: 25px;
+  text-align: justify;
+}
+
+.maskot {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 20%;
+  margin: 50px 0;
+}
+
+.maskot img:nth-child(1) {
+  width: auto;
+  height: 150px;
+}
+
+.maskot img:nth-child(2) {
+  width: auto;
+  height: 150px;
+}
+
+.text-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1ppx solid red;
+}
+
+.text-3 p {
+  text-indent: 25px;
+}
+
+.teams {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 50px;
+}
+
+.item-team {
+  height: 350px;
+  width: 200px;
+  text-align: center;
+}
+
+.item-team img {
+  height: 230px;
+  width: 200px;
+  border: 1px solid #28bfffed;
+  border-radius: 45px 0 45px 0;
+  box-shadow: 1px 1px 1px #148ec2;
+  padding: 9px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.item-team p {
+  color: #148ec2;
+  font-weight: bold;
+}
+
+.item-team span {
+  color: #28bfffed;
+}
+
+/* end desa */
+
+.warna {
+  color: #28bfff;
+  font-size: 25px;
+}
+
+.warna-1 {
+  color: #28bfff;
+  font-size: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* title */
+
+  .title {
+    height: 25vh;
+  }
+
+  .title h1 {
+    top: 60%;
+    font-size: 25px;
+  }
+
+  .title p {
+    font-size: 14px;
+  }
+
+  /* end title */
+
+  /* desa  */
+
+  .text-1 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50vw auto;
+    row-gap: 15px;
+  }
+
+  .text-1 img {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .gambar-1 {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "img-1 img-1"
+      "img-2 img-3";
+    margin: 50px 0;
+  }
+
+  .gambar-1-1 {
+    grid-area: img-1;
+    width: 80vw;
+    height: calc(40vw + 15px);
+  }
+
+  .gambar-1-2 {
+    height: 25vw;
+  }
+
+  .gambar-1-3 {
+    height: 25vw;
+  }
+
+  .teams {
+    column-gap: 25px;
+    row-gap: 70px;
+  }
+
+  .item-team {
+    height: 200px;
+    width: 150px;
+    text-align: center;
+  }
+
+  .item-team img {
+    height: 150px;
+    width: 150px;
+    border: 1px solid #28bfffed;
+    border-radius: 45px 0 45px 0;
+    box-shadow: 1px 1px 1px #148ec2;
+    padding: 15px;
+  }
+
+  .warna-1 {
+    color: #28bfff;
+    font-size: 25px;
+  }
+}

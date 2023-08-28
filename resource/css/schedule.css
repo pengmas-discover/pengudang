@@ -1,0 +1,524 @@
+/* title */
+
+.title {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+}
+
+.img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: blur(2px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(/pengudang.discover.co.id/images/content/title-schedule.webp);
+}
+
+.title h1 {
+  position: absolute;
+  top: 15vh;
+  font-size: 50px;
+  text-shadow: 1px 1px 1px black;
+  left: 10vw;
+}
+
+.title p {
+  position: absolute;
+  left: 10vw;
+  top: 20vh;
+  font-size: 25px;
+}
+
+/* end title */
+
+.schedule {
+  padding: 50px 15vw 50px;
+}
+
+/* header discove */
+.header-discover {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.header-discover li {
+  position: relative;
+  cursor: pointer;
+}
+
+.header-discover li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -15px;
+  width: 0;
+  height: 7px;
+  border-radius: 5px;
+  background-color: #dcf7fb;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  transform-origin: center;
+}
+
+.header-discover li:hover::after {
+  width: 50%;
+}
+
+.header-discover .discover-active::after {
+  width: 50%;
+}
+
+/* end header discove */
+
+/* content template */
+.content-content {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.content-content img {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.content-content p {
+  text-align: justify;
+  text-indent: 25px;
+}
+
+.content-content h2 {
+  margin-top: 30px;
+  text-align: start;
+}
+
+.content-content h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.content-content li {
+  text-align: start;
+  margin-left: 30px;
+}
+
+.accomodation {
+  display: block;
+}
+
+.transportation {
+  display: none;
+}
+
+.person {
+  display: none;
+}
+
+.content-header {
+  display: grid;
+  grid-template-columns: 10% auto;
+  column-gap: 30px;
+  width: 100%;
+  height: auto;
+}
+
+.content-header img {
+  width: 100%;
+  height: auto;
+}
+
+/* end content template */
+
+/* currency */
+
+.home-siti {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+}
+
+.siti-grid {
+  display: grid;
+  grid-template-columns: 60% auto;
+  column-gap: 30px;
+}
+
+.siti-grid img {
+  margin: 0;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.child-siti-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 30px;
+}
+
+.child-siti-grid img {
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+
+.siti-grid-2 {
+  border: 1px solid #d9d9d9;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.siti-grid-2 h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.siti-grid-2 h6 {
+  text-align: start;
+  font-weight: normal;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.siti-grid-3 {
+  border-radius: 10px;
+  margin-top: 15px;
+  border: 1px solid #d9d9d9;
+  padding: 15px 15px 25px;
+}
+
+.siti-grid-3 h3 {
+  text-align: start;
+}
+
+.siti-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.siti-flex p {
+  text-indent: 0;
+}
+
+.siti-flex img {
+  margin: 0;
+  width: auto;
+  width: 30px;
+  height: 30px;
+}
+
+.siti-flex div {
+  display: grid;
+  justify-items: center;
+}
+
+.siti-grid-4 {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.siti-grid-4 .number-room,
+.siti-grid-4 .price,
+.siti-grid-4 .contact-iwan {
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  padding: 30px 10px;
+  width: 30%;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.siti-grid-4 img {
+  margin: 0;
+  width: auto;
+  height: 30px;
+  width: 30px;
+}
+
+.siti-grid-4 h5 {
+  font-size: 14px;
+}
+
+.siti-grid-4 p {
+  font-size: 12px;
+}
+
+.number-room,
+div {
+  text-align: start;
+}
+
+.peson-1 {
+  width: 70vw;
+  height: 18vw;
+  background-image: url("/pengudang.discover.co.id/assets/background-contct.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 3vw;
+  margin: 30px 0;
+}
+
+.person-1-1 h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.person-1-1-1 {
+  display: grid;
+  grid-template-columns: 50px auto;
+  column-gap: 15px;
+}
+
+.person-1-1-1 h6 {
+  font-size: 20px;
+}
+
+.person-1-1-1 p {
+  font-size: 18px;
+}
+
+.person-1-1-1 img {
+  margin: 0;
+  width: 50px;
+  height: auto;
+}
+
+/* end currency */
+
+/* most popular */
+
+.most-popular {
+  width: 100%;
+  height: auto;
+  background-color: #e8f7ff;
+  padding: 50px 0;
+  text-align: center;
+  position: relative;
+  z-index: 9;
+}
+
+.most-popular h1 {
+  font-size: 18px;
+  text-align: start;
+  padding: 0 0 0 10vw;
+}
+
+.most-popular .p {
+  text-align: start;
+  padding: 0 0 0 10vw;
+}
+
+.list-item-most {
+  padding: 50px 10vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.item-most {
+  width: 18vw;
+  height: calc(18vw + auto);
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px gray;
+  transition: 0.5s;
+}
+
+.item-most img {
+  width: 18vw;
+  height: 13vw;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.item-most:hover {
+  box-shadow: 1px 1px 8px gray;
+}
+
+.info-most {
+  position: relative;
+  width: 85%;
+  margin: 15px auto;
+  color: black;
+  text-align: left;
+}
+
+.info-most h3 {
+  font-size: 14px;
+}
+
+/* end most popular */
+
+/* template */
+
+.warna {
+  color: #28bfff;
+  font-size: 25px;
+}
+
+.warna-1 {
+  color: #28bfff;
+  font-size: 50px;
+}
+
+.tambah {
+  text-align: end;
+  display: grid;
+}
+
+.tambah-1 {
+  text-align: end;
+  width: 50%;
+  justify-self: end;
+}
+
+/* end template */
+
+@media only screen and (max-width: 768px) {
+  /* title */
+
+  .title {
+    height: 30vh;
+  }
+
+  .img {
+    height: 30vh;
+  }
+
+  .title h1 {
+    top: 13vh;
+    font-size: 25px;
+  }
+
+  .title p {
+    top: 17vh;
+    font-size: 14px;
+  }
+
+  /* end title */
+
+  .schedule {
+    padding: 50px 10vw 50px;
+  }
+
+  /* header discove */
+  .header-discover {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 25px;
+  }
+
+  /* end header discove */
+
+  /* currency */
+
+  .home-siti {
+    width: 100%;
+    height: auto;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  .siti-grid {
+    grid-template-columns: auto;
+  }
+
+  .siti-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 15px;
+    margin-top: 15px;
+  }
+
+  .siti-flex div {
+    display: grid;
+    justify-items: center;
+  }
+
+  .siti-grid-4 {
+    row-gap: 15px;
+    column-gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .siti-grid-4 .number-room,
+  .siti-grid-4 .price,
+  .siti-grid-4 .contact-iwan {
+    padding: 15px 10px;
+    width: 100%;
+  }
+
+  .tambah {
+    text-align: start;
+    display: grid;
+  }
+  
+  .tambah-1 {
+    text-align: start;
+    width: 100%;
+    justify-self: start;
+  }
+
+  .peson-1 {
+    width: 80vw;
+    height: auto;
+    background-image: none;
+  }
+
+  .person-1-1 h4 {
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  .person-1-1-1 h6 {
+    font-size: 14px;
+  }
+
+  .person-1-1-1 p {
+    font-size: 14px;
+  }
+
+  .person-1-1-1 img {
+    width: 30px;
+  }
+
+  /* end currency */
+
+  /* most popular */
+
+  .most-popular {
+    display: none;
+  }
+
+  /* end most popular */
+
+  /* template */
+
+  .warna {
+    color: #28bfff;
+    font-size: 25px;
+  }
+
+  .warna-1 {
+    color: #28bfff;
+    font-size: 25px;
+  }
+  /* end template */
+}

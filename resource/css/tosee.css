@@ -1,0 +1,234 @@
+/* title */
+
+.title {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/pengudang.discover.co.id/images/content/title-tosee.webp);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+}
+
+.title h1 {
+  position: absolute;
+  top: 20vh;
+  left: 10vw;
+  font-size: 50px;
+  color: white;
+}
+
+.title p {
+  position: absolute;
+  top: 25vh;
+  left: 10vw;
+  font-size: 18px;
+  color: white;
+}
+
+.tosee-search {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 30px auto 70px;
+  column-gap: 15px;
+  width: 40vw;
+  top: 30vh;
+  left: 10vw;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  align-items: center;
+}
+
+.tosee-search img {
+  width: 30px;
+  height: 30px;
+}
+
+.tosee-search input {
+  border: none;
+}
+
+.tosee-search input:focus {
+  outline: none;
+}
+
+.tosee-search button {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #28bfff;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* end title */
+
+/* destination */
+
+.list-destination {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 150px 10vw 50px;
+  background-color: rgb(241, 241, 241);
+}
+
+.flex-item {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3vw;
+  row-gap: 3vw;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.item-destination {
+  height: auto;
+  width: 100%;
+  border-radius: 5px;
+  display: grid;
+  grid-template-rows: 15vw auto auto;
+  border-radius: 5px;
+  border: 1px solid rgba(40, 191, 255, 0.5);
+  box-shadow: 1px 1px 1px rgba(40, 191, 255, 0.5);
+  padding-bottom: 15px;
+}
+
+.item-destination img {
+  height: 15vw;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  object-fit: cover;
+}
+
+.next-item {
+  position: absolute;
+  width: auto;
+  height: auto;
+  background-color: white;
+  left: 50%;
+  bottom: 50px;
+  transform: translate(-50%);
+  border-radius: 25px;
+  align-items: center;
+  justify-items: center;
+  padding: 0 10px;
+}
+
+.next {
+  padding: 15px 25px;
+  height: auto;
+  width: auto;
+  border-radius: 50%;
+  cursor: pointer;
+  color: blue;
+}
+
+.item-destination h2 {
+  padding: 0 15px;
+  color: black;
+}
+
+.item-destination .p {
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 5px;
+  align-items: start;
+  color: black;
+}
+
+.item-destination .span {
+  width: 20px;
+  height: 20px;
+  background-image: url(/pengudang.discover.co.id/assets/maps.png);
+  background-position: center;
+  background-size: cover;
+  align-self: flex-start;
+}
+
+/* end destination */
+
+/* template */
+
+.warna {
+  color: #28bfff;
+  font-size: 25px;
+}
+
+.warna-1 {
+  color: #28bfff;
+  font-size: 50px;
+}
+
+/* end template */
+
+@media only screen and (max-width: 768px) {
+  /* title */
+  .title {
+    width: 100vw;
+    height: 35vh;
+  }
+
+  .title h1 {
+    position: absolute;
+    top: 10vh;
+    font-size: 25px;
+    width: 80vw;
+  }
+
+  .title p {
+    top: 15vh;
+    font-size: 14px;
+    width: 80%;
+  }
+
+  .tosee-search {
+    grid-template-columns: 30px 40vw 70px;
+    width: auto;
+    top: 25vh;
+  }
+
+  /* end title */
+
+  /* destination */
+
+  .list-destination {
+    padding-top: 50px;
+  }
+
+  .flex-item {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .item-destination {
+    grid-template-rows: 30vw auto auto;
+  }
+
+  .item-destination img {
+    height: 30vw;
+  }
+
+  .item-destination .p {
+    display: none;
+  }
+  /* end destination */
+
+  /* template */
+
+  .warna {
+    color: #28bfff;
+    font-size: 25px;
+  }
+
+  .warna-1 {
+    color: #28bfff;
+    font-size: 25px;
+  }
+  /* end template */
+}

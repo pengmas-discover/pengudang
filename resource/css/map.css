@@ -1,0 +1,204 @@
+main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+.leaflet-control-zoom {
+  top: 75px;
+}
+
+.layes {
+  position: absolute;
+  display: grid;
+  grid-template-rows: repeat(4, 50px);
+  row-gap: 15px;
+  top: 75px;
+  right: 25px;
+  z-index: 999;
+}
+
+.layes img {
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hover-layer {
+  position: absolute;
+  display: grid;
+  grid-template-rows: repeat(3, 50px);
+  row-gap: 15px;
+  top: 75px;
+  right: 90px;
+  z-index: 999;
+}
+
+.hover-layer h3 {
+  align-self: center;
+  justify-self: end;
+  background-color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transform: scale(0);
+}
+
+#satelit {
+  background-color: #28bfff;
+}
+
+.information {
+  position: absolute;
+  top: 75px;
+  left: -30vw;
+  z-index: 999;
+  display: grid;
+  grid-template-rows: 17vw auto;
+  width: 30vw;
+  height: auto;
+  background-color: white;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.carousel {
+  padding: 5px;
+  background: #eee;
+  height: 20vw;
+  width: 30vw;
+  border-radius: 5px;
+}
+
+.carousel-cell {
+  margin-right: 20px;
+  overflow: hidden;
+  width: 30vw;
+  height: 20vw;
+}
+
+.carousel-cell img {
+  display: block;
+  height: 20vw;
+}
+
+.flickity-button {
+  width: 30px;
+  height: 30px;
+}
+
+.content-map {
+  width: 100%;
+  height: 100%;
+  padding: 15px 25px 25px;
+}
+
+.information a {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+#isi-map {
+  text-indent: 25px;
+  text-align: justify;
+}
+
+#ticket-map {
+  font-weight: bold;
+}
+
+.leaflet-popup-content-wrapper button {
+  border: none;
+  background-color: transparent;
+  color: #28bfff;
+  position: relative;
+  cursor: pointer;
+}
+
+.close-map {
+  position: absolute;
+  color: white;
+  background-color: rgb(231, 49, 49);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  cursor: pointer;
+  top: 15px;
+  right: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    .hover-layer {
+        display: none;
+    }
+    
+  .information {
+      position: fixed;
+      top:auto;
+    bottom: 0;
+    left: 0;
+    grid-template-rows: 20vw auto;
+    width: 100vw;
+    height: 40vh;
+    z-index: 9999;
+    transform: scale(0);
+  }
+
+  .carousel {
+    height: 50vw;
+    width: 100vw;
+  }
+
+  .carousel-cell {
+    height: 50vw;
+    width: 100vw;
+  }
+
+  .carousel-cell img {
+      width: 100vw;
+    height: 50vw;
+  }
+
+  .flickity-button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .content-map {
+    width: 100%;
+    height: 100%;
+    padding: 15px 25px 25px;
+  }
+
+  .content-map h1 {
+    position: absolute;
+    top: 60vw;
+  }
+
+  .content-map table {
+    position: absolute;
+    top: 65vw;
+  }
+
+  .information a {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  #isi-map {
+    display: none;
+  }
+
+}

@@ -1,0 +1,373 @@
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 1px gray;
+}
+
+.header .menu a,
+.header .search-desktop input {
+  color: black;
+}
+
+.header #search-click {
+  background-image: url(/pengudang.discover.co.id/assets/search.png);
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+}
+
+.header .logo-title {
+  background-image: url(/pengudang.discover.co.id/assets/logo-title.png);
+}
+
+/* title */
+
+.title-todo {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 170px 10vw 50px;
+  display: grid;
+  grid-template-columns: 30vw auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "img text-1"
+    "text-2 text-2";
+  column-gap: 15px;
+  row-gap: 15px;
+  border-bottom: 1px solid #1f83ae;
+}
+
+.title-todo h1 {
+  position: absolute;
+  left: 10vw;
+  top: 100px;
+  font-size: 25px;
+}
+
+.title-todo img {
+  grid-area: img;
+  width: 30vw;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px #1f83ae;
+}
+
+.text-1 {
+  grid-area: text-1;
+  text-indent: 30px;
+  text-align: justify;
+}
+
+.text-2 {
+  grid-area: text-2;
+  text-indent: 30px;
+  text-align: justify;
+  align-self: flex-start;
+}
+
+/* end title */
+
+/* category */
+
+.todo-category {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 100px 10vw 50px;
+}
+
+.todo-category h1 {
+  position: absolute;
+  font-size: 25px;
+  top: 50px;
+}
+
+.category {
+  display: grid;
+  grid-template-columns: 300px auto;
+  column-gap: 30px;
+}
+
+.filter-by {
+  border: 1px solid rgba(31, 131, 174, 0.3);
+  max-height: 400px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.filter-by h3 {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.filter-by p {
+  margin: 5px 0;
+}
+
+.filter-by li {
+  display: flex;
+  align-items: center;
+}
+
+.filter-by input {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.filter-by label {
+  margin-bottom: 10px;
+}
+
+.todo-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.todo-item {
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(31, 131, 174, 0.3);
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 300px auto;
+  column-gap: 15px;
+  padding: 15px;
+  margin: 0 0 15px;
+}
+
+.gambar {
+  width: 100%;
+}
+
+.carousel {
+  background: #eee;
+  height: 218px;
+}
+
+.carousel .carousel-cell {
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.carousel .carousel-cell img {
+  display: block;
+  height: 218px;
+}
+
+.flickity-button {
+  width: 30px;
+  height: 30px;
+}
+
+.carousel .flickity-page-dots {
+  display: none;
+}
+
+.keterangan {
+  position: relative;
+}
+
+.keterangan h2 {
+  font-size: 18px;
+  color: #1f83ae;
+}
+
+.operation {
+  display: grid;
+  grid-template-columns: 30px auto;
+  column-gap: 15px;
+  row-gap: 5px;
+  margin-top: 5px;
+}
+
+.operation img {
+  width: 25px;
+}
+
+.operation button {
+  width: 70px;
+  background-color: #28bfff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0 15px;
+  cursor: pointer;
+}
+.operation p:nth-child(6) {
+  color: #35ebae;
+}
+
+.keterangan .icon {
+  width: 30px;
+  height: 30px;
+  top: 0;
+  right: 0;
+  background-size: cover;
+  position: absolute;
+  border: 1px solid #1f83ae;
+  border-radius: 50%;
+}
+
+.see {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #1f83ae;
+  cursor: pointer;
+}
+
+.no-data {
+  font-size: 25px;
+  color: #28bfff;
+}
+
+/* end category */
+
+.warna {
+  color: #28bfff;
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* title */
+
+  .title-todo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "img"
+      "text-1"
+      "text-2";
+  }
+
+  .title-todo img {
+    width: 80vw;
+  }
+
+  /* end title */
+
+  /* category */
+
+  .todo-category {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 100px 10vw 50px;
+  }
+
+  .category {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    column-gap: 0;
+    row-gap: 30px;
+  }
+
+  .todo-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .todo-item {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    column-gap: 0;
+    row-gap: 15px;
+  }
+
+  .gambar {
+    width: 72vw;
+  }
+
+  .carousel {
+    background: #eee;
+    height: 218px;
+  }
+
+  .carousel .carousel-cell {
+    margin-right: 20px;
+    overflow: hidden;
+  }
+
+  .carousel .carousel-cell img {
+    display: block;
+    height: 218px;
+  }
+
+  .flickity-button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .carousel .flickity-page-dots {
+    display: none;
+  }
+
+  .keterangan {
+    position: relative;
+  }
+
+  .keterangan h2 {
+    font-size: 18px;
+    color: #1f83ae;
+  }
+
+  .operation {
+    display: grid;
+    grid-template-columns: 30px auto;
+    column-gap: 15px;
+    row-gap: 5px;
+    margin-top: 5px;
+  }
+
+  .operation img {
+    width: 25px;
+  }
+
+  .operation button {
+    width: 70px;
+    background-color: #28bfff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0 15px;
+    cursor: pointer;
+  }
+  .operation p:nth-child(6) {
+    color: #35ebae;
+  }
+
+  .keterangan .icon {
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 0;
+    background-size: cover;
+    position: absolute;
+    border: 1px solid #1f83ae;
+    border-radius: 50%;
+  }
+
+  .see {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #1f83ae;
+    cursor: pointer;
+  }
+
+  .no-data {
+    font-size: 25px;
+    color: #28bfff;
+  }
+
+  /* end category */
+
+  .warna {
+    color: #28bfff;
+    font-size: 25px;
+  }
+}
